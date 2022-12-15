@@ -6,11 +6,11 @@ function render() {
 
 }
 
+render(quiz);
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-
-render(quiz);
 
 function getCardElement(card) {
     const cardTemplate = document.querySelector('#card__template').content;
@@ -25,5 +25,13 @@ function getCardElement(card) {
 function createCard(card) {
     const gallery = document.querySelector('.quiz');
     const cardElement = getCardElement(card);
-    gallery.appendChild(cardElement);
+    const newCardElement = gallery.appendChild(cardElement);
+    newCardElement.addEventListener('click', cardClickHandler);
+
 }
+
+function cardClickHandler() {
+    console.log('hi');
+}
+
+// document.addEventListener('click', cardClickHandler);
