@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body {
+    background-color: black;
+}
+
+.page__body {
+    border: 1px red solid;
+    max-width: 600px;
+    margin: 10% auto;
+    background-color: #020205;
+    color: #f3f3f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quiz__ques {
+    text-align: center;
+}
+
+.quiz__ans {
+    margin-top: 50px;
+    /* border: 1px red solid; */
+    line-height: 25px;
+    display: none;
+}
