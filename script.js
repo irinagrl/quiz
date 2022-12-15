@@ -23,15 +23,13 @@ function getCardElement(card) {
 }
 
 function createCard(card) {
-    const gallery = document.querySelector('.quiz');
+    const cardPlacement = document.querySelector('.cardPlacement');
     const cardElement = getCardElement(card);
-    const newCardElement = gallery.appendChild(cardElement);
-    newCardElement.addEventListener('click', cardClickHandler);
+    cardPlacement.appendChild(cardElement);
+    cardPlacement.addEventListener('click', cardClickHandler);
 
 }
 
 function cardClickHandler() {
     console.log('hi');
 }
-
-// document.addEventListener('click', cardClickHandler);
