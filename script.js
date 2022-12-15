@@ -32,4 +32,5 @@ function createCard(card) {
 
 function cardClickHandler() {
     console.log('hi');
+
 }
